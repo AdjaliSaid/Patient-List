@@ -1,0 +1,73 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(229, 56, 136, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn, .nav-btn2 {
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(229, 56, 136, 0.2);
+    background: rgba(255, 255, 255, 0.9);
+    color: #E53888;
+}
+
+.nav-btn:hover, .nav-btn2:hover {
+    background: rgba(229, 56, 136, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(229, 56, 136, 0.1);
+}
+
+.nav-btn2 {
+    background: rgba(229, 56, 136, 0.9);
+    color: white;
+}
+
+.nav-btn2:hover {
+    background: rgba(229, 56, 136, 1);
+}
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 10px 20px;
+    }
+
+    .logo-img {
+        height: 32px;
+    }
+
+    .nav-btn, .nav-btn2 {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+} 

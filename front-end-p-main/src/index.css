@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Slight transparency */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  padding: 10px 15px;
+  color: white;
+}
+
+  .nav-links {
+    display: flex;
+    gap: 40px;
+    margin-right: 20px; 
+  }
+  
+  body { 
+    background-image: url('/assets/Connnn.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+*{
+  margin: 0;
+    padding: 0;
+}
+
+.nav-btn {
+  background-color: #d23a71; /* Change color as needed */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-btn2 {
+  background-color: #d23a71; /* Change color as needed */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #d8609c; /* Darker color on hover */
+}
+.nav-btn2:hover {
+  background-color: #d8609c; /* Darker color on hover */
+}
+
+.logo-img {
+  width: 40px; /* Adjust for smaller size */
+  height: 40px; /* Keep height the same as width */
+  border-radius: 50%; /* Makes it circular */
+  object-fit: cover; /* Ensures the image fills the circle properly */
+  margin-left: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it takes the full height of the nav */
+}

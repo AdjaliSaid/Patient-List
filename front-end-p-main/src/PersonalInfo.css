@@ -1,0 +1,228 @@
+.personal-info-page {
+    min-height: 100vh;
+    background: linear-gradient(rgba(255,192,203,0.4), rgba(255,255,255,0.5)), url('./assets/home2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px 20px;
+}
+
+.back-home-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    padding: 0 20px;
+}
+
+.back-home-btn {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(229, 56, 136, 0.2);
+    color: #E53888;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.back-home-btn:hover {
+    background: rgba(229, 56, 136, 0.1);
+    transform: translateY(-2px);
+}
+
+.back-home-btn i {
+    font-size: 18px;
+}
+
+.personal-info-container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(229, 56, 136, 0.2);
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info-header h1 {
+    color: #E53888;
+    font-size: 28px;
+    margin: 0;
+}
+
+.edit-btn, .save-btn, .cancel-btn {
+    background: #E53888;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.edit-btn:hover, .save-btn:hover {
+    background: #d42d7d;
+    transform: translateY(-2px);
+}
+
+.cancel-btn {
+    background: #666;
+}
+
+.cancel-btn:hover {
+    background: #555;
+    transform: translateY(-2px);
+}
+
+.edit-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.info-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(229, 56, 136, 0.1);
+}
+
+.info-section h2 {
+    color: #666;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(229, 56, 136, 0.1);
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(229, 56, 136, 0.1);
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    color: #666;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.info-value {
+    color: #E53888;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.edit-input {
+    border: 1px solid rgba(229, 56, 136, 0.2);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #E53888;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+.edit-input:focus {
+    outline: none;
+    border-color: #E53888;
+    box-shadow: 0 0 0 2px rgba(229, 56, 136, 0.1);
+}
+
+.password-input-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.password-toggle {
+    background: none;
+    border: none;
+    color: #E53888;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-toggle:hover {
+    color: #d42d7d;
+}
+
+.loading-message {
+    color: #E53888;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error-message {
+    background: rgba(255, 68, 68, 0.1);
+    color: #ff4444;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 68, 68, 0.2);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.error-message::before {
+    content: '⚠️';
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .personal-info-container {
+        padding: 20px;
+    }
+
+    .info-header h1 {
+        font-size: 24px;
+    }
+
+    .info-section h2 {
+        font-size: 18px;
+    }
+
+    .info-label, .info-value {
+        font-size: 14px;
+    }
+
+    .edit-input {
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .edit-btn, .save-btn, .cancel-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+} 

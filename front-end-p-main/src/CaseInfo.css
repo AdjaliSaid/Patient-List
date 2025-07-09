@@ -1,0 +1,223 @@
+.case-info-container {
+  background: url('./assets/home2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  overflow-y: auto;
+}
+
+.back-home-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.back-button {
+  padding: 12px 25px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #c92471;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(229, 56, 136, 0.2);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(229, 56, 136, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-button:hover {
+  background: rgba(229, 56, 136, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(229, 56, 136, 0.15);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 80px;
+  box-shadow: 0 8px 32px rgba(229, 56, 136, 0.1);
+  border: 1px solid rgba(229, 56, 136, 0.1);
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.text {
+  color: #c92471;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.underline {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #c92471, #bb1d67);
+  border-radius: 2px;
+  margin-top: 5px;
+}
+
+.inputs {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  width: 100%;
+  background: transparent;
+  border-radius: 12px;
+  padding: 0;
+  gap: 6px;
+}
+
+.input-field label {
+  font-size: 14px;
+  color: #bb1d67;
+  font-weight: 600;
+  margin-left: 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.input-field input,
+.input-field textarea {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 15px;
+  border: 1px solid rgba(229, 56, 136, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  color: #e15898;
+  letter-spacing: 0.3px;
+}
+
+.input-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+  border-color: rgba(229, 56, 136, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 15px rgba(229, 56, 136, 0.1);
+  outline: none;
+}
+
+.input-field input::placeholder,
+.input-field textarea::placeholder {
+  color: rgba(229, 56, 136, 0.4);
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto 0;
+}
+
+.sub-btn {
+  width: 200px;
+  height: 48px;
+  color: white;
+  background: linear-gradient(135deg, #c92471, #bb1d67);
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(229, 56, 136, 0.2);
+}
+
+.sub-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(229, 56, 136, 0.3);
+  background: linear-gradient(135deg, #c1276a, #E53888);
+}
+
+.sub-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin-top: 80px;
+    padding: 30px;
+  }
+
+  .text {
+    font-size: 28px;
+  }
+
+  .input-field input,
+  .input-field textarea {
+    padding: 12px 15px;
+  }
+
+  .sub-btn {
+    width: 180px;
+    height: 45px;
+  }
+}
+
+/* Custom scrollbar */
+.container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: rgba(229, 56, 136, 0.05);
+  border-radius: 4px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: rgba(229, 56, 136, 0.2);
+  border-radius: 4px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background: rgba(229, 56, 136, 0.3);
+}
+  

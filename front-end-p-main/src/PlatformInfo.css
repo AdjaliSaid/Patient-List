@@ -1,0 +1,215 @@
+.platform-container {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: url('./assets/home2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 40px 20px;
+}
+
+.platform-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(247, 168, 196, 0.9), rgba(229, 56, 136, 0.9));
+    z-index: -1;
+}
+
+.back-home-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-home-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #c92471;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(229, 56, 136, 0.2);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(229, 56, 136, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.back-home-btn:hover {
+    background: rgba(229, 56, 136, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(229, 56, 136, 0.15);
+}
+
+.platform-content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(229, 56, 136, 0.1);
+    border: 1px solid rgba(229, 56, 136, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px;
+}
+
+.platform-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.platform-header h1 {
+    color: #c92471;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.platform-underline {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #c92471, #bb1d67);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.platform-sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.platform-section {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(229, 56, 136, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.platform-section:hover {
+    transform: translateY(-5px);
+}
+
+.platform-section h2 {
+    color: #c92471;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.platform-section p {
+    color: #b92369;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.platform-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.platform-section li {
+    color: #b92369;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.platform-section li::before {
+    content: '•';
+    color: #c92471;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+
+.platform-cta {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(229, 56, 136, 0.1);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.platform-cta h2 {
+    color: #c92471;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.platform-cta p {
+    color: #b92369;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.cta-button {
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #c92471, #bb1d67);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(229, 56, 136, 0.3);
+}
+
+@media (max-width: 768px) {
+    .platform-sections {
+        grid-template-columns: 1fr;
+    }
+
+    .platform-content {
+        padding: 30px;
+        margin: 20px;
+    }
+
+    .platform-header h1 {
+        font-size: 28px;
+    }
+
+    .platform-section h2 {
+        font-size: 20px;
+    }
+
+    .platform-section {
+        padding: 20px;
+    }
+
+    .platform-cta {
+        padding: 30px;
+    }
+} 
